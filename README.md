@@ -1,6 +1,6 @@
 # ono-tebe-nado
 Project Ono Tebe Nado is a simple landing page made with plain HTML and CSS to show 
-The link for project: https://github.com/AlisherUrazbayev/ono-tebe-nado
+The link for project: https://github.com/AlisherUrazbayev/ono-tebe-nado.git
 ## Table of Contents
 
 - [Getting Started](#getting-started)
