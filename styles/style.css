@@ -1,1 +1,248 @@
 /* место для вашего кода */
+
+.header {
+  min-height: 293px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 92px 50px;
+  width: 1440px;
+}
+
+.header__menu {
+}
+
+.header__links-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: circle;
+}
+
+.header__link-list-item {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__link {
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+  padding-bottom: 4px;
+
+  justify-self: center;
+}
+
+.header__logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+address {
+  margin: 0;
+  padding: 0;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.cover {
+  position: relative;
+  background-color: antiquewhite;
+  width: 1440px;
+  height: auto;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.cover__container {
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 50px;
+  gap: 135px;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 60px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 60px;
+}
+
+.aligned-text_right {
+  text-align: right;
+  padding-left: 924px;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+  align-items: center;
+  gap: 83px;
+}
+
+.cover__description-text {
+  order: 1;
+  word-spacing: 17px;
+}
+
+.bet-button {
+  order: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  color: inherit;
+  font-size: inherit;
+  text-align: center;
+  padding: 12px 32px;
+  text-transform: inherit;
+}
+
+.lots {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  padding: 180px 50px;
+  gap: 30px;
+}
+
+.lots__heading {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.lots__card-list-item {
+  border: 1px solid black;
+  min-height: 450px;
+  flex-grow: 1;
+  width: 450px;
+}
+
+.card-link {
+  min-height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: 50px 40px;
+  width: 100%;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+  background-size: cover;
+}
+
+.card__title {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 26.4px */
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+
+.lots__look-more-link {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 40px;
+}
+
+.about {
+  background-color: a ntiquewhite;
+  min-height: 25vh;
+}
+
+.footer {
+  background-color: black;
+  min-height: 10vh;
+}
