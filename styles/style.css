@@ -233,7 +233,6 @@ address {
 
 .about {
   width: 1440px;
-  background-color: a ntiquewhite;
   min-height: 25vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
