@@ -1,18 +1,18 @@
 /* место для вашего кода */
-
 .header {
   min-height: 293px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 92px 50px;
-  width: 1440px;
+  max-width: inherit;
+  width: 100%;
 }
 
 .header__links-list {
   display: flex;
   list-style: circle;
-  gap: 31px;
+  gap: 33px;
 }
 
 .header__link-list-item {
@@ -22,51 +22,58 @@
   line-height: normal;
 }
 
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
 .header__logo {
   display: block;
   width: 148px;
   height: 105px;
   padding-bottom: 4px;
-
   justify-self: center;
 }
 
 .header__logo-image {
   width: 100%;
   height: 100%;
-}
-
-address {
-  margin: 0;
-  padding: 0;
+  object-fit: contain;
+  object-position: center;
 }
 
 .address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
+  justify-self: start;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 135%;
   padding-right: 2px;
-  margin-top: -5px;
+  padding-top: 9px;
+}
+
+.header__address {
+  justify-self: end;
+  padding-top: 0px;
 }
 
 .cover {
   position: relative;
-  background-color: antiquewhite;
-  width: 1440px;
-  height: auto;
+  max-width: inherit;
+  width: 100%;
   background-image: url("../images/cover.jpg");
   background-size: cover;
 }
 
 .overlay {
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
 }
 
 .cover__container {
@@ -86,6 +93,7 @@ address {
   line-height: 115%;
   letter-spacing: 60px;
   text-transform: uppercase;
+  letter-spacing: 30px;
 }
 
 .aligned-text {
@@ -93,7 +101,7 @@ address {
 }
 
 .letter-spacing-extended {
-  letter-spacing: 30px;
+  letter-spacing: 60px;
 }
 
 .aligned-text_center {
@@ -102,12 +110,15 @@ address {
 }
 
 .no-letter-spacing {
-  letter-spacing: 60px;
+  letter-spacing: 0px;
 }
 
 .aligned-text_right {
   text-align: right;
-  padding-left: 924px;
+}
+
+.default-letter-spacing {
+  letter-spacing: 30px;
 }
 
 .cover__description {
@@ -144,7 +155,8 @@ address {
 }
 
 .lots {
-  width: 1440px;
+  max-width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 180px 50px;
@@ -153,7 +165,7 @@ address {
 
 .lots__heading {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -170,10 +182,9 @@ address {
 }
 
 .lots__card-list-item {
-  border: 1px solid black;
   min-height: 450px;
   flex-grow: 1;
-  width: 450px;
+  width: 430px;
   position: relative;
 }
 
@@ -189,26 +200,24 @@ address {
   min-height: 100%;
   padding: 50px 40px;
   width: 100%;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-size: cover;
 }
 
 .card__title {
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -219,7 +228,7 @@ address {
 
 .card__text {
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -228,7 +237,7 @@ address {
 
 .lots__look-more-link {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -237,11 +246,11 @@ address {
 }
 
 .about {
-  width: 1440px;
-  min-height: 25vh;
+  width: 1340px;
+  margin-left: 50px;
+  margin-right: 50px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 250px 250px;
   column-gap: 25px;
 }
 
@@ -253,7 +262,6 @@ address {
   width: 240px;
   height: 240px;
   justify-self: center;
-  margin-left: 57px;
 }
 
 .about__logo-image {
@@ -268,14 +276,12 @@ address {
   justify-self: start;
   align-self: center;
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding-left: 8px;
-  padding-bottom: 3px;
 }
 
 .about__text {
@@ -286,23 +292,28 @@ address {
   justify-content: space-between;
   gap: 25px;
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   width: 885px;
-  padding-bottom: 9px;
-  padding-left: 8px;
+  padding-top: 6px;
+  line-height: 119%;
 }
 
 .footer {
-  min-height: 10vh;
-  width: 1440px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  max-width: inherit;
+  width: 100%;
+  min-height: 293px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   padding: 172px 50px 90px 50px;
+}
+
+.footer__menu {
+  padding-bottom: 25px;
 }
 
 .footer__menu-list {
@@ -310,23 +321,26 @@ address {
   flex-direction: column;
   color: #000;
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: -5px;
 }
 
 .footer__menu-list-item {
   list-style-type: none;
 }
 
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   gap: 45px;
-  margin-top: -6px;
+  padding-bottom: 40px;
 }
 
 .footer__social-list-item {
