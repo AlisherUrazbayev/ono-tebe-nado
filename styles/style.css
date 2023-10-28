@@ -91,7 +91,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 115%;
-  letter-spacing: 60px;
   text-transform: uppercase;
   letter-spacing: 30px;
 }
@@ -299,7 +298,6 @@
   line-height: normal;
   width: 885px;
   padding-top: 6px;
-  line-height: 119%;
 }
 
 .footer {
