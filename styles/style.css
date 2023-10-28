@@ -247,7 +247,6 @@
 }
 
 .about {
-  min-width: 1100px;
   max-width: 1340px;
   margin-left: 50px;
   margin-right: 50px;
@@ -300,9 +299,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 885px;
   padding-top: 6px;
-  width: 100%;
 }
 
 .footer {
